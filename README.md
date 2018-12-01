@@ -36,6 +36,7 @@ Simple right? ...except do this on any OS platform with Python, and abstract awa
 ### To Do
 
 - Version 1, it works. :)
+- Ok, I should probably add a CLI for this simple tool. But, It probably deserves more robust (warning: complexity) parameters. This version was literally for a one-push-button backup GUI app.
 
 ### Dependencies
 
