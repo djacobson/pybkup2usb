@@ -11,7 +11,7 @@ $ git clone https://github.com/djacobson/pybkup2usb
 $ cd pybkup2usb
 ```
 
-Run the demo:
+Run the demo, with and without a USB flash drive plugged into your computer:
 
 ```
 > python3 demo.py
