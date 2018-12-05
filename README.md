@@ -5,25 +5,30 @@
 ## Quick Start
 
 Install from [GitHub](https://github.com/djacobson/pybkup2usb):
-
 ```
 $ git clone https://github.com/djacobson/pybkup2usb
 $ cd pybkup2usb
+$ pip3 install -e .
 ```
 
 Run the following command, with and without a USB flash drive plugged into your computer:
-
 ```
-> python3 bkup2usb.py stuff_to_backup
-```
-
-...or, with a prefix added for your backup target:
-
-```
-> python3 bkup2usb.py stuff_to_backup -p MyID
+> bkup2usb stuff_to_backup
 ```
 
-Also, simply type ``python3 bkup2usb.py -h`` for help with parameters.
+...or, to run directly from source (i.e.: skipping the ``pip3 install`` above):
+
+```
+> python3 -m pybkup2usb stuff_to_backup
+```
+
+Add a prefix to your backup target:
+
+```
+> bkup2usb stuff_to_backup -p MyID
+```
+
+Also, simply type ``bkup2usb -h`` for help with parameters.
 
 Using in your application code is as simple as the following lines of code (prefix is optional):
 

@@ -7,10 +7,11 @@ setup(
 	url='https://github.com/djacobson/pybkup2usb',
 	author='David Jacobson',
 	author_email='david@jacobsonhome.com',
-	license='MIT',
+	license=open('LICENSE').read().strip(),
 	packages=['pybkup2usb'],
-	zip_safe=False,
-	entry_points = {
-		'console_scripts': ['bkup2usb=pybkup2usb.runcli:main'],
+	install_requires=open('requirements.txt').read().strip().splitlines(),
+
+	entry_points={
+		'console_scripts': ['bkup2usb=pybkup2usb.__main__:main']
 	}
 )
