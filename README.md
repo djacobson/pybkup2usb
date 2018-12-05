@@ -23,7 +23,7 @@ Run the following command, with and without a USB flash drive plugged into your 
 > python3 bkup2usb.py stuff_to_backup -p MyID
 ```
 
-Also, simply type ``python3 bkup2usb.py --help`` for help with parameters.
+Also, simply type ``python3 bkup2usb.py -h`` for help with parameters.
 
 Using in your application code is as simple as the following lines of code (prefix is optional):
 
