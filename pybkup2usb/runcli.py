@@ -40,13 +40,13 @@ def parse_args():
 def main():
 	args = parse_args()
 
-	bkuptarget = args.path_or_files_to_backup
-	if len(os.path.dirname(bkuptarget)) == 0:
+	bkupsource = args.path_or_files_to_backup
+	if len(os.path.dirname(bkupsource)) == 0:
 		# Missing path, default to current path
-		bkuptarget = os.path.join(os.getcwd(), bkuptarget)
+		bkupsource = os.path.join(os.getcwd(), bkupsource)
 
 	retstatus, retmsg = bkup2usb.backup(
-		bkuptarget,
+		bkupsource,
 		prefix=args.prefix,
 		suffix=args.suffix)
 	print(retmsg)
