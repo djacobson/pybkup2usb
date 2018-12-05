@@ -1,6 +1,6 @@
 # pybkup2usb
 
-**`pybkup2usb`** is a python module to simplify backing up files to a USB flash drive on any OS platform.
+**`pybkup2usb`** is a python module to simplify backing up a folder or file(s) to a USB flash drive on any OS platform.
 
 ## Quick Start
 
@@ -30,7 +30,7 @@ Using in your application code is as simple as the following lines of code (pref
 ```
 from pybkup2usb import bkup2usb
 
-retstatus, retmsg = bkup2usb.backup(bkupdir, prefix='MyID')
+retstatus, retmsg = bkup2usb.backup(bkupsource, prefix='MyID')
 ```
 
 ## About
