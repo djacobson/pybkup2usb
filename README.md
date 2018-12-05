@@ -11,15 +11,25 @@ $ git clone https://github.com/djacobson/pybkup2usb
 $ cd pybkup2usb
 ```
 
-Run the demo, with and without a USB flash drive plugged into your computer:
+Run the following command, with and without a USB flash drive plugged into your computer:
 
 ```
-> python3 demo.py
+> python3 bkup2usb.py stuff_to_backup
 ```
 
-Examine the single line of code in ``demo.py``:
+...or, with a prefix added for your backup target:
 
 ```
+> python3 bkup2usb.py stuff_to_backup -p MyID
+```
+
+...and simply type ``python3 bkup2usb.py --help`` for help with parameters.
+
+Using in your application code is as simple as the following line of code (prefix is optional):
+
+```
+from pybkup2usb import bkup2usb
+
 retstatus, retmsg = bkup2usb.backup(bkupdir, prefix='MyID')
 ```
 
@@ -36,7 +46,6 @@ Simple right? ...except do this on any OS platform with Python, and abstract awa
 ### To Do
 
 - Version 1, it works. :)
-- Ok, I should probably add a CLI for this simple tool. But, It probably deserves more robust (warning: complexity) parameters. This version was literally for a one-push-button backup GUI app.
 
 ### Dependencies
 

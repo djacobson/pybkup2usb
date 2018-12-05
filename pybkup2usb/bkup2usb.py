@@ -89,14 +89,14 @@ def get_bkup_fname(file_or_folder_name, prefix=None, suffix=None):
 	return fname
 
 
-def backup(from_file_or_folder, prefix=None):
+def backup(from_file_or_folder, prefix=None, suffix=None):
 	if not os.path.exists(from_file_or_folder):
 		return False, 'Path or file [{}] does not exist to backup.'.format(from_file_or_folder)
 
 	usb_path = get_first_usb_path()
 	if usb_path:
 		# Build dest file or folder name
-		to_path = os.path.join(usb_path, get_bkup_fname(from_file_or_folder, prefix))
+		to_path = os.path.join(usb_path, get_bkup_fname(from_file_or_folder, prefix, suffix))
 
 		# Copy it to removable media path
 		try:
