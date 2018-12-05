@@ -14,7 +14,7 @@ $ cd pybkup2usb
 Run the following command, with and without a USB flash drive plugged into your computer:
 
 ```
-> python3 bkup2usb.py stuff_to_backup
+> **python3 bkup2usb.py stuff_to_backup**
 ```
 
 ...or, with a prefix added for your backup target:
