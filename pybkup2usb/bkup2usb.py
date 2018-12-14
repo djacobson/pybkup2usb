@@ -4,6 +4,7 @@
 # Script: pybkup2usb/bkup2usb.py Module
 #
 # Author V1: David Jacobson (david@jacobsonhome.com)
+# https://github.com/djacobson/pybkup2usb
 
 import os
 from datetime import datetime

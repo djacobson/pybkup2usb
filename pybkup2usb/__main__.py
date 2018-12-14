@@ -2,6 +2,7 @@
 # Script: pybkup2usb/runcli.py Module
 #
 # Author V1: David Jacobson (david@jacobsonhome.com)
+# https://github.com/djacobson/pybkup2usb
 
 import os
 import argparse
