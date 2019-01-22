@@ -9,7 +9,7 @@ import argparse
 
 from pybkup2usb import bkup2usb
 
-# from tagreader._version import __version__
+# from pybkup2usb._version import __version__
 
 
 def parse_args():
