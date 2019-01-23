@@ -53,11 +53,8 @@ Simple right? ...except do this on any OS platform with Python, and abstract awa
 - Version 1, it works. :)
 
 - If like me, you are building a dedicated device for a single-purpose app, and interested in using this USB function (i.e.: your app) as the single user interface to the USB flash drive + backup, you may be interested in disabling / supressing the general desktop feature of automatically launching the File Manager app after inserting and automounting a USB flah drive. Below is a possible solution...
-
 For Ubuntu:
-``gsettings set org.gnome.desktop.media-handling automount-open false`` [Credit: ish](https://askubuntu.com/questions/191527/disable-auto-opening-nautilus-window-after-auto-mount)
-
-I'm still looking for an equivalent solution for Raspbian's Gnome desktop.
+``gsettings set org.gnome.desktop.media-handling automount-open false`` [Credit: ish](https://askubuntu.com/questions/191527/disable-auto-opening-nautilus-window-after-auto-mount) I'm still looking for an equivalent solution for Raspbian's Gnome desktop.
 
 ### Dependencies
 
