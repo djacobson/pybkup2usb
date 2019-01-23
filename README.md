@@ -57,6 +57,7 @@ Simple right? ...except do this on any OS platform with Python, and abstract awa
    For Ubuntu:
 
    ``gsettings set org.gnome.desktop.media-handling automount-open false`` [Credit: ish](https://askubuntu.com/questions/191527/disable-auto-opening-nautilus-window-after-auto-mount)
+
    I'm still looking for an equivalent solution for Raspbian's Gnome desktop.
 
 ### Dependencies
